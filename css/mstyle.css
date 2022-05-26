@@ -1,0 +1,140 @@
+/* media queries  */
+@media screen and (max-width:1250px)
+{
+    #container main .commonHiWi{
+    padding:25px 10% 25px 10%;
+    }
+    h1.h1{
+          font-size:45px;
+    }
+    h3.h3{
+            font-size:20px;
+    }
+}
+
+
+/* media queries of tablet */
+@media screen and (max-width:970px)
+{
+    /* heading and login part */
+    #logAndDef #log-container h1{
+        font-size:3rem;
+    }
+    #logAndDef #log-container > h2{
+        font-size:1.5rem;
+        font-weight:200;
+
+    }
+    #logAndDef #log-container > p{
+        font-size:1.4rem;
+        font-weight:100;
+    }
+    /* login part  */
+    #log-container input#in{
+        width: 75%;
+        height: 52px;
+        left: 2%;
+        margin: 0px 0px 10px 0px;
+    }
+    #log-container #emailBox p#place{
+        top:26%;
+        left:10%;
+    }
+    #log-container #emailBox input:focus-within +  p#place{
+        top:0px
+    }
+
+    #log-container div#btn{
+        top:100%;
+        left: 40%;
+        height: 52px;
+        padding:2px 2px;
+        }
+    #log-container #btn h2{
+        font-size:20px;
+    }
+    /* main part media queries */
+    main div.commonHiWi{
+    padding:30px 6% 30px 6%;
+    }
+    .commonHiWi div#firstInnerBox{  
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:center;
+    
+    }
+    #firstInnerBox div#heading{
+        width:100%;
+        display:flex;
+        justify-content:center ;
+        align-items: center;
+        padding:0px 3% 0px 3%;
+    }
+    #firstInnerBox div#img{
+        width:600px;
+        height:400px;
+    }
+    .commonHiWi div#secondInnerBox{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        position:relative;
+    }
+    #secondInnerBox div#rightHeadingBox{
+        /* because without media queris it is in bottom but after media queris i want to show it is in top so i used position */
+        position: absolute;
+        top:3%;
+        width:100%;
+        display:flex;
+        justify-content:center ;
+        align-items: center;
+        padding:0px 3% 0px 3%;
+    }
+    #rightHeadingBox h1{
+        width:100%;
+        text-align:center;
+    }
+    #secondInnerBox div#leftMobileBox{
+        margin-top:25%;
+    }
+    .commonHiWi div#thirdInnerBox{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        position:relative;
+    }
+    #thirdInnerBox div#leftHeading{
+        width:100%;
+        display:flex;
+        justify-content:center ;
+        align-items: center;
+        padding:0px 3% 0px 3%;
+    }
+    .commonHiWi div#fouthInnerBox{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        position:relative;
+    }
+    #fouthInnerBox div#rightHeading{
+        position: absolute;
+        top:3%;
+        width:100%;
+        display:flex;
+        justify-content:center ;
+        align-items: center;
+        padding:0px 3% 0px 3%;
+    }
+    div#rightHeading h1{
+        width:100%;
+        text-align:center;
+    }
+    #fouthInnerBox div#leftKidImg{
+        margin-top:25%;
+    }
+
+}

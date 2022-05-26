@@ -1,0 +1,348 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.nav-padding{
+    padding:0px 40px 0px 40px;
+}
+::-webkit-scrollbar{
+    width:12px;
+    background-color:aqua;
+}
+::-webkit-scrollbar-thumb{
+    background-image:linear-gradient(yellowgreen,rgb(69, 69, 199)) ;
+    border-radius: 50px;
+}
+/* header part */
+header{
+    height:96vh;
+    width:100%;
+    background-image:url(img/bg.jpg);
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+    opacity:0.9;
+    border-bottom:10px solid rgb(109, 109, 109);       
+    /* position relative */
+    position:relative;
+}
+
+/* for overlay backgroud */
+.overlay{
+    width:100%;
+    height:95vh;
+    background-color:black;
+    position:absolute;
+    opacity:0.6;
+}
+
+nav{
+    /* border:2px solid red; */
+    height:150px;
+    width:100%;
+    /* nav ko uper krne ke liye use kiya hu */
+    position:absolute;
+    /* flex */
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    padding:15px 0px 0px 0px;
+}
+/* logo part */
+#nav-left{
+    width:30%;
+   /* border:2px solid green; */
+}
+#nav-left img{
+    width:70%;
+}
+/*sign up part  */
+#nav-right {
+    /* border:2px solid green; */
+    width:40%;
+    height:30%;
+    margin-top:3.5%;
+    display:grid;
+    grid-auto-flow: column;
+    grid-template-columns:50% 30%;
+}
+#nav-right #sign{
+    /* margin-left:20px; */
+    background-color:red;
+    text-align: center;
+    padding:5% 5%;
+    cursor: pointer;
+    border-radius:5%;
+}
+#nav-right #sign a{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size:20px;
+    text-decoration:none;
+    text-transform: capitalize;
+    color: white;
+}
+#nav-right #lan select{
+    color:white;
+    padding:10px 20%;
+    border-radius:5%;
+    outline: none;
+    border:none;
+    background-color:rgb(36, 35, 35);
+    border:2px solid white;
+}
+#nav-right #lan option{
+    padding:5px 15px;
+    color:white;
+    background-color:grey;
+    font-size:15px;
+    text-decoration:none;
+    text-transform: capitalize;
+}
+
+/* heading and login part */
+#logAndDef{
+    /* border:3px solid green; */
+    height:550px;
+    width:100%;
+    position: absolute;
+    top:25%;
+}
+#log-container{
+    margin:0 auto;
+    /* border:2px solid red; */
+    width:100%;
+    height:100%;
+    padding:10px 20% px 20%;
+    text-align: center;
+    position: relative;
+}
+#log-container h1{
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+    font-size:5rem;
+
+}
+#log-container  h2{
+
+    margin-top:10px;
+    color: white;
+    font-size:2rem;
+    font-family:Arial, Helvetica, sans-serif;
+
+
+}
+#log-container p{
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    font-weight:600;
+    /* for better alignment i use padding */
+    padding:0px 40px;
+}
+
+/* login part */
+#log-container #emailBox{
+    /* border:2px solid yellow; */
+    position:relative;
+}
+
+#log-container input{
+    width:40%;
+    height:70px;
+    padding:10px 10px 0px;
+    border:none;
+    margin-right:150px;
+    position: relative;
+    font-size:20px;
+    color: black;
+    font-weight:500;
+}
+
+#log-container input:focus{
+    outline: none;
+    /* border:1px solid rgb(63, 63, 253); */
+
+}
+#log-container #emailBox p{
+    color:black;
+    position: absolute;
+    top: 25px;
+    left:23%;
+}
+#log-container #emailBox input:focus-within + p{
+    top:0px
+}
+#log-container #btn{
+    background-color:rgb(250, 16, 16);
+    width:20%;
+    height:70px;
+    padding:5px 0 ;
+    position: absolute;
+    top:0;
+    left: 60%;
+}
+
+#log-container #btn:hover{
+    background-color:red;
+}
+/* main part */
+main .commonHiWi{
+    border-bottom:10px solid rgb(109, 109, 109);   
+    width:100%;
+    /* height:480px; */
+    height:49%;
+    padding:30px 15% 30px 15%;
+    background-color:rgb(0, 0, 0);
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+/* common h1 and h3 font size */
+.h1{
+    font-size:56px;
+}
+.h3{
+    font-size:24px;
+    
+}
+#firstInnerBox{
+    display:grid;
+    grid-auto-flow: column;
+    grid-template-columns:50% 50%;
+}
+
+#firstInnerBox #heading{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+}
+
+/* #heading h1{
+    font-size:3.5rem;
+    
+}
+#heading h3{
+    font-size:1.5rem;
+} */
+
+#firstInnerBox #img{
+    position:relative;
+}
+#firstInnerBox #img img{
+    position: relative;
+    z-index:2;
+}
+#img video{
+    position:absolute;
+    top: -2%;
+   width: 73%;
+    right:14%;
+    height: 100%;
+}
+
+#secondInnerBox{
+    display:grid;
+    grid-auto-flow: column;
+    grid-template-columns:50% 50%;
+    height:100%;   
+
+
+}
+#secondInnerBox #leftMobileBox{
+
+}
+#secondInnerBox #rightHeadingBox{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+}
+#secondInnerBox #rightHeadingBox h3{
+    width:90%;
+    height: auto;
+}
+   
+#thirdInnerBox{
+    display:grid;
+    grid-auto-flow: column;
+    grid-template-columns:50% 50%;
+    height:100%;
+    width:100%;
+}
+#thirdInnerBox #leftHeading{
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+}
+#thirdInnerBox #rightPc {
+    position:relative;
+}
+#thirdInnerBox #rightPc  video{
+    position: absolute;
+    top: 11%;
+    left: 18%;
+    width: 62%;
+}
+#thirdInnerBox #rightPc img{
+    /* width:555px; */
+    /* height:416px; */
+    width:100%;
+     height:100%;
+    position: relative;
+}
+#leftHeading h3{
+    width:90%;
+    height: auto;
+} 
+#fouthInnerBox{
+    display:grid;
+    grid-auto-flow: column;
+    grid-template-columns:50% 50%;
+    height:100%;
+}
+#rightHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ; 
+}
+#rightHeading h3{
+    width:90%;
+    height: auto;
+} 
+/* footer part start from here */
+#container footer{
+    background-color:black;
+    height:400px;
+    width:100%;
+    padding:5% 15% 0% 15%;
+}
+#main-foot{
+    display:grid;
+    grid-auto-flow:column;
+    grid-template-columns:50% 50%;
+    margin-top:20px;
+}
+#LeftFooter{
+    display:grid;
+    grid-auto-flow:column;
+    grid-template-columns:50% 50%;
+}
+/* common ul and li and a  */
+.ul{
+    list-style-type: none;
+}
+#main-foot li{
+    padding:8px 0px 0px 0px;
+}
+#main-foot a{
+    color:grey;
+    font-size:15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+#rightFooter{
+    display:grid;
+    grid-auto-flow:column;
+    grid-template-columns:50% 50%;
+}
